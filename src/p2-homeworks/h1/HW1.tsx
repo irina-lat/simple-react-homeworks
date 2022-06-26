@@ -13,7 +13,6 @@ function HW1() {
         <div>
             <hr/>
             homeworks 1
-            <p>Task from Ignat</p>
             {/*should work (должно работать)*/}
 
             <Message messageData={[messageData]}/>
