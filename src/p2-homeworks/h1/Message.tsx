@@ -1,41 +1,31 @@
-import React from 'react'
+import React from "react";
 import s from './Message.module.css'
 
-
 type Message = {
-    messageData: messageType[]
-}
-
-type messageType = {
     avatar: any,
     name: string,
     message: string,
-    time: string
+    time: any
 }
 
-export const Message = (props: Message) => {
+export function Message(props: Message) {
     return (
         <>
-            {props.messageData.map((messageArray, index) => {
-                    return (
-                        <div className={s.message} key={index} >
-                            <div className={s.avatar}>
-                                <img src={messageArray.avatar} alt="avatar"/>
-                            </div>
-                            <div className={s.place}>
-                                <div>
-                                    <h3>{messageArray.name}</h3>
-                                    <p>{messageArray.message}</p>
-                                    <time>{messageArray.time}</time>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                }
-            )}
-
+            <div className={s.message}>
+                <div className={s.avatar}>
+                    <img src={props.avatar} alt="avatar"/>
+                </div>
+                <div className={s.place}>
+                    <div>
+                        <h3>{props.name}</h3>
+                        <p>{props.message}</p>
+                        <time>{props.time}</time>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
+
 
 
