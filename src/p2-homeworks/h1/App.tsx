@@ -1,8 +1,10 @@
 import React from 'react'
-import s from './App.module.css'
-import HW1 from '../../../p2-homeworks/h1/HW1'
-import HW2 from "../../../p2-homeworks/h1/HW2";
-import HW3 from "../../../p2-homeworks/h1/HW3";
+import s from '../../p1-main/m1-ui/u1-app/App.module.css'
+import HW1 from './HW1'
+import HW2 from "./HW2";
+import HW3 from "./HW3";
+import HW4 from "./HW4";
+
 
 function App() {
     return (
@@ -11,7 +13,7 @@ function App() {
             <HW1/>
             <HW2/>
             <HW3/>
-            {/*<HW4/>*/}
+            <HW4/>
             {/*<HW5/>*/}
 
         </div>
