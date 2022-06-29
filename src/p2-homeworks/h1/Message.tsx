@@ -1,14 +1,14 @@
 import React from "react";
 import s from './Message.module.css'
 
-type Message = {
+type MessagePropsType = {
     avatar: any,
     name: string,
     message: string,
     time: any
 }
 
-export function Message(props: Message) {
+export function Message(props: MessagePropsType) {
     return (
         <>
             <div className={s.message}>

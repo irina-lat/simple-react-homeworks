@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "./Message.module.css";
 
-type AlternativeMessage = {
+type AlternativeMessagePropsType = {
     messageData: AlternativeMessageType[]
 }
 
@@ -12,7 +12,7 @@ type AlternativeMessageType = {
     time: string
 }
 
-export function AlternativeMessage(props: AlternativeMessage) {
+export function AlternativeMessage(props: AlternativeMessagePropsType) {
     return (
         <>
             {props.messageData.map((alternativeMessageArray, index) => {
