@@ -1,0 +1,44 @@
+.affairs {
+    width: 300px;
+    margin: 15px 0;
+}
+
+.affairs > div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.affairs > div {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button:focus {
+  outline: black solid 1px;
+}
+
+.button:active {
+    background: #fff;
+}
+
+
+.affair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.affair > div {
+    width: 75px;
+}
+
+.high {
+    color:red;
+}
+
+.middle {
+    color: orange;
+}
+
+.low {
+    color: grey;
+}
