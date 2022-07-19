@@ -4,9 +4,9 @@ import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string // need to fix any
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>)=> void // need to fix any
-    addUser: ()=> void // need to fix any
-    onEnter: (e: KeyboardEvent<HTMLInputElement>)=> void
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
     error: string // need to fix any
     totalUsers: number // need to fix any
 }
@@ -19,9 +19,12 @@ const Greeting: React.FC<GreetingPropsType> = (
 
     return (
         <div className={s.greeting}>
-            <input className={inputClass} value={name} onChange={setNameCallback} onKeyDown={onEnter} onBlur={setNameCallback}/>
-            <div className={s.error}>{error}</div>
-            <button onClick={addUser} disabled={!name}>add</button>
+            <div>
+                <input className={inputClass} value={name} onChange={setNameCallback} onKeyDown={onEnter}
+                       onBlur={setNameCallback}/>
+                <div className={s.error}>{error}</div>
+            </div>
+            <button className={s.button} onClick={addUser} disabled={!name}>add</button>
             <span>{totalUsers}</span>
         </div>
     )
