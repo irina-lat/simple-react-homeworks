@@ -5,11 +5,7 @@ import App from './p2-homeworks/h1/App'
 import * as serviceWorker from './serviceWorker'
 
 
-ReactDOM.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>,
-    document.getElementById("root")
+ReactDOM.render(<App/>, document.getElementById("root")
 )
 
 // If you want your app to work offline and load faster, you can change
