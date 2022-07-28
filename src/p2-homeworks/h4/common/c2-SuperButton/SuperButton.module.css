@@ -1,7 +1,36 @@
 .default {
+    margin-right: 0.3rem;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 5px;
+    color: #3B3B3B;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
 
 }
 
+.default:disabled {
+    cursor: auto;
+    opacity: 80%;
+    background-color: darkgrey;
+}
+
+.default:hover {
+    background-color: darkgrey;
+}
+
 .red {
-    background: red;
+    margin-right: 0.3rem;
+    background-color: transparent;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    color: crimson;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.red:hover {
+    color: crimson;
+    background-color: rgba(250,209,192,0.5);
 }

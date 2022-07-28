@@ -1,12 +1,18 @@
 .superInput {
-
+    display: block;
+    outline: none;
+    border: 2px solid gray;
+    margin-top: 10px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    outline: none;
+    border: 2px solid red;
+    background-color: rgba(250, 209, 192, 0.91);
 }
 
 .error {
+    display: flex;
+    flex-direction: column;
     color: red;
 }
