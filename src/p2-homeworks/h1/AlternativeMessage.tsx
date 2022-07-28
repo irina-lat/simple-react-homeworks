@@ -6,7 +6,7 @@ type AlternativeMessagePropsType = {
 }
 
 type AlternativeMessageType = {
-    avatar: any,
+    avatar: string,
     name: string,
     message: string,
     time: string
