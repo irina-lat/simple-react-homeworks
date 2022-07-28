@@ -51,7 +51,7 @@ function HW4() {
                         delete {/*// название кнопки попадёт в children*/}
                     </SuperButton>
 
-                    <SuperButton >
+                    <SuperButton disabled>
                         disabled
                     </SuperButton>
                 </div>

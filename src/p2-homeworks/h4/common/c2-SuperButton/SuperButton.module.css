@@ -12,7 +12,6 @@
 
 .default:disabled {
     cursor: auto;
-    opacity: 80%;
     background-color: darkgrey;
 }
 
