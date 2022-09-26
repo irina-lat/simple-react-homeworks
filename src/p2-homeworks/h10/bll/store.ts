@@ -5,7 +5,7 @@ import {loadingReducer} from './loadingReducer'
 //
 // })
 //
-// const store = createStore(reducers)
+// const store = createStoreHook(reducers)
 //
 // export default store
 //
@@ -13,3 +13,4 @@ import {loadingReducer} from './loadingReducer'
 //
 // // @ts-ignore
 // window.store = store // for dev
+
